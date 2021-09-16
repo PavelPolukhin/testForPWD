@@ -1,0 +1,31 @@
+@import "varsAndMixins";
+body, html{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+.el-main{
+  padding: 72px 80px;
+}
+.el-button{
+  padding: 12px 40px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 3px;
+}
+.el-button--primary{
+  color: $white-color;
+  background-color: $btn-primary-color;
+  transition: 0.3s ease all;
+  &:hover{
+    background-color: $btn-primary-hover-color;
+  }
+}
+h2{
+  @include h2;
+  margin:0;
+}
+@import "recommended";
